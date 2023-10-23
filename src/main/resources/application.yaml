@@ -1,2 +1,12 @@
 server:
   port: 8001
+
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: user
+      port: 27001
+      host: localhost
