@@ -10,3 +10,15 @@ spring:
       database: user
       port: 27001
       host: localhost
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 656463736328-fu3g15ousgmfp0krk0v7i3mourd8ob0i.apps.googleusercontent.com
+            client-secret: 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
+
+jwt:
+  secret: secret
+  expiration: 36000
