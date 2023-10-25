@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "net.guzari.auth.grpc";
+option java_outer_classname = "UserFeature";
+
+service UserFeatureService {
+  rpc FindFeaturesByEmail(UserRequest) returns (UserResponse) {}
+}
+
+message UserRequest {
+  string email = 1;
+}
+
+message UserResponse {
+  repeated string features = 1;
+}
