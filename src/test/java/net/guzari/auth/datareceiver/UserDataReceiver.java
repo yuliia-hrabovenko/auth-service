@@ -9,6 +9,8 @@ public final class UserDataReceiver {
 
     public static final String ACTIVE_USER_EMAIL = "some@gmail.com";
     public static final String NON_ACTIVE_USER_EMAIL = "user@gmail.com";
+    public static final Set<String> FEATURES = Set.of("f1", "f2");
+    public static final Set<String> FEATURES_1 = Set.of("f1", "f2", "f3");
 
     public static List<UserEntity> getUsers() {
         return List.of(getActiveUser(), getNonActiveUser());
@@ -19,7 +21,7 @@ public final class UserDataReceiver {
                 .id("1")
                 .email(ACTIVE_USER_EMAIL)
                 .active(true)
-                .features(Set.of("f1", "f2"))
+                .features(FEATURES)
                 .build();
     }
 
@@ -28,7 +30,7 @@ public final class UserDataReceiver {
                 .id("2")
                 .email(NON_ACTIVE_USER_EMAIL)
                 .active(false)
-                .features(Set.of("f1", "f2", "f3"))
+                .features(FEATURES_1)
                 .build();
     }
 }
