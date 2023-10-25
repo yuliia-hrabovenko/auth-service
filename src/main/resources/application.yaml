@@ -22,8 +22,3 @@ spring:
 jwt:
   secret: secret
   expiration: 36000
-
-grpc:
-  server:
-    port: 9090
-    inProcessName: test
