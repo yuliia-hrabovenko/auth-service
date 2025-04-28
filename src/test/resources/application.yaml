@@ -5,10 +5,10 @@ spring:
   data:
     mongodb:
       authentication-database: admin
-      username: ${MONGO_USERNAME}
-      password: ${MONGO_PASSWORD}
-      database: ${MONGO_DATABASE}
-      port: ${MONGO_PORT}
+      username: testuser
+      password: testpass
+      database: userdb
+      port: 27001
       host: localhost
 
   security:
@@ -20,5 +20,5 @@ spring:
             client-secret: ${CLIENT_SECRET}
 
 jwt:
-  secret: ${JWT_SECRET}
-  expiration: ${JWT_EXPIRATION}
+  secret: secret
+  expiration: 6200000000
