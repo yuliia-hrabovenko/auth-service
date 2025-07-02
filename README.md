@@ -2,8 +2,6 @@
 
 A Spring Boot application providing secure OAuth2 authentication with JWT, user management via MongoDB, and a gRPC service for retrieving user features.
 
----
-
 ## 📚 Features
 
 - Google OAuth2 authentication
@@ -13,8 +11,6 @@ A Spring Boot application providing secure OAuth2 authentication with JWT, user 
 - Spring Security with route protection
 - Custom login success handler with token return
 - Integration and unit tests with Testcontainers and Mockito
-
----
 
 ## Tech Stack
 
@@ -27,8 +23,6 @@ A Spring Boot application providing secure OAuth2 authentication with JWT, user 
 - **Lombok**
 - **Testcontainers**
 - **Mockito / JUnit 5**
-
----
 
 ## MongoDB Document
 
